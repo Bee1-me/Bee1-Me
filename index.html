@@ -1,118 +1,138 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <title>Bee1</title>
 
- 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<head> 
+  <style>
+    body {
+      background: black;
+      color: white;
+      text-align: center;
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+      margin: 0;
+      padding: 0;
+    }
 
-    <meta charset="UTF-8"> 
+    h1 {
+      color: gray;
+      text-shadow: 0 0 8px white;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
 
-    <title>Bee1</title>   
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px gray, 0 0 20px white;
+      }
 
-    <style> 
+      to {
+        text-shadow: 0 0 25px lightgray, 0 0 35px white;
+      }
+    }
 
-    a{ 
+    .links {
+      margin: 40px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
 
-        display: inline-block; 
+    a {
+      display: inline-block;
+      width: 180px;
+      padding: 15px;
+      background: gray;
+      color: whitesmoke;
+      border: 2px solid lightgray;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px whitesmoke;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 18px;
+    }
 
-        margin: 70px; 
+    a:hover {
+      background: whitesmoke;
+      color: gray;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px 5px white;
+    }
 
-        padding: 8px 12px; 
+    .fa-brands {
+      margin-right: 10px;
+    }
 
-        border:3px solid lightgray; 
+    h4 {
+      color: white;
+      margin-top: 40px;
+    }
 
-        text-decoration: none; 
+    h5 {
+      color: red;
+      margin-top: 50px;
+      font-size: 16px;
+    }
 
-        text-align: center; 
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid gray;
+      padding: 20px;
+      font-size: 14px;
+      color: lightgray;
+    }
 
-        cursor: pointer; 
+    .glow-btn {
+      background: linear-gradient(90deg, gray, white, gray);
+      background-size: 200%;
+      animation: shine 3s linear infinite;
+    }
 
-        box-shadow: 0px 0px 7px 3px whitesmoke; 
+    @keyframes shine {
+      0% {
+        background-position: 200% center;
+      }
 
-    } 
+      100% {
+        background-position: 0 center;
+      }
+    }
+  </style>
+</head>
 
-    a:hover{ 
+<body>
 
-        background: whitesmoke; 
-        color: gray;
-        font-family: Comic Sans MS; 
+  <h1>Welcome To This Website</h1>
+  <h1>Social Links</h1>
 
-    } 
+  <div class="links">
+    <a class="glow-btn" href="https://www.twitch.tv/k4r0_r6" target="_blank">
+      <i class="fa-brands fa-twitch"></i> Twitch
+    </a>
 
-    h1{ 
+    <a class="glow-btn" href="https://www.youtube.com/@karo-r6" target="_blank">
+      <i class="fa-brands fa-youtube"></i> YouTube
+    </a>
 
-    text-align: center; 
-    color: gray;
-} 
+    <a class="glow-btn" href="https://discord.com/" target="_blank">
+      <i class="fa-brands fa-discord"></i> Discord
+    </a>
+  </div>
 
-a{ 
+  <h4>Discord Username: <span style="color: lightgray;">karor6</span></h4>
 
-background: gray; 
+  <h5>Developed By: Bee1</h5>
 
-color: whitesmoke; 
-    
- text-align: center;
- 
+  <footer>
+    <p>© 2025 Bee1 | All Rights Reserved</p>
+  </footer>
 
-} 
+</body>
 
-h4{ 
-
-    text-align: center; 
-    color: white;
-    font-family: Comic Sans MS; 
-    
-    
-} 
-
-body{ 
-
-    background: black;
-    text-align: center;
-
-} 
-
-h3{ 
-
-    text-align: center 
-    color: white;
-    
-     
-
-} 
-h5{
-    color: red;
-}
-
-    </style> 
-
-      </head> 
-
-      </body> 
-
-           
-
-     
-
-     
-
-    <h1>Welcome For This Website</h1> 
-
-    <h1>Social Link</h1>       
-
-      <a href=https://www.twitch.tv/k4r0_r6 "> 
-
-    <h3>Twitch Link</h3></a> 
-
-      <a href="https://www.youtube.com/@karo-r6 "> 
-
-              <h3>Youtube Link</h3></a> 
-
-                                                <h4> Discord Username is:karor6 </h4> 
-                                                 
-
-                                                                                        
-    
-
-<pre><h5>Developed By:Bee1<pre><h5> 
+</html>
