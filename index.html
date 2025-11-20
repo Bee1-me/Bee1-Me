@@ -7,21 +7,20 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
-      background: black;
+      background: linear-gradient(90deg, gray, white, black);
+      background-size: 200%;
+      animation: shine 3s linear infinite;
       color: white;
       text-align: center;
       font-family: 'Comic Neue', 'Comic Sans MS', cursive;
       margin: 0;
       padding: 0;
-      background: linear-gradient(90deg, gray, white, black);
-      background-size: 200%;
-      animation: shine 3s linear infinite;
-    
     }
 
     h1 {
@@ -32,9 +31,8 @@
 
     @keyframes glow {
       from {
-        text-shadow: 0 0 10px red, 0 0 20px whitesmoke;
+        text-shadow: 0 0 10px red, 0 0 20px white;
       }
-
       to {
         text-shadow: 0 0 25px lightgray, 0 0 35px whitesmoke;
       }
@@ -63,37 +61,16 @@
     }
 
     a:hover {
-      background: whitesmoke;
       color: gray;
       transform: scale(1.1);
       box-shadow: 0 0 20px 5px white;
       background: linear-gradient(100deg, black, gray, black);
       background-size: 200%;
       animation: shine 3s linear infinite;
-        
     }
 
     .fa-brands {
       margin-right: 10px;
-    }
-
-    h4 {
-      color: white;
-      margin-top: 40px;
-    }
-
-    h5 {
-      color: red;
-      margin-top: 50px;
-      font-size: 16px;
-    }
-
-    footer {
-      margin-top: 60px;
-      border-top: 1px solid gray;
-      padding: 20px;
-      font-size: 14px;
-      color: lightgray;
     }
 
     .glow-btn {
@@ -106,10 +83,45 @@
       0% {
         background-position: 200% center;
       }
-
       100% {
         background-position: 0 center;
       }
+    }
+
+    /* ABOUT ME SECTION */
+    .about-box {
+      width: 70%;
+      margin: 50px auto;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid red;
+      border-radius: 15px;
+      box-shadow: 0 0 15px 4px red;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .about-box h2 {
+      color: red;
+      text-shadow: 0 0 10px white;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: lightgray;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    h4, h5 {
+      margin-top: 40px;
+    }
+
+    h5 {
+      color: red;
     }
   </style>
 </head>
@@ -120,21 +132,29 @@
   <h1>Social Links...</h1>
 
   <div class="links">
-    <a class="glow-btn" href="https://www.twitch.tv/k4r0_r6 " target="_blank">
+    <a class="glow-btn" href="https://www.twitch.tv/k4r0_r6" target="_blank">
       <i class="fa-brands fa-twitch"></i> Twitch
     </a>
 
-    <a class="glow-btn" href="https://www.youtube.com/@karo-r6 " target="_blank">
+    <a class="glow-btn" href="https://www.youtube.com/@karo-r6" target="_blank">
       <i class="fa-brands fa-youtube"></i> YouTube
     </a>
-
-    
   </div>
 
   <h4>Discord Username: <span style="color: lightgray;">karor6</span></h4>
 
-  <h5>Developed By: Bee1</h5>
+  <!-- ABOUT ME SECTION -->
+  <div class="about-box">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Bee1</strong> — a creator who enjoys gaming, streaming, 
+      designing websites, and building fun online experiences.  
+      I love learning new things and improving my skills every day.  
+      This website is a small project to share my links and show my style!
+    </p>
+  </div>
 
+  <h5>Developed By: Bee1</h5>
 
 </body>
 
